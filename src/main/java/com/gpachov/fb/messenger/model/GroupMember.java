@@ -1,4 +1,4 @@
-package com.gpachov.fb.messenger;
+package com.gpachov.fb.messenger.model;
 
 import com.restfb.Facebook;
 

@@ -4,6 +4,7 @@ import junit.framework.TestCase;
 
 import org.junit.Test;
 
+import com.gpachov.fb.volleyballinviter.GroupFetcher;
 import com.restfb.DefaultFacebookClient;
 
 public class GroupFetcherTest extends TestCase {
@@ -12,8 +13,8 @@ public class GroupFetcherTest extends TestCase {
 	private DefaultFacebookClient facebookClient;
 
 	protected void setUp() throws Exception {
-		this.facebookClient = new DefaultFacebookClient(Credentials.ACCESS_TOKEN);
-		this.groupFetcher = new GroupFetcher(facebookClient, Credentials.GROUP_ID);
+		this.facebookClient = new DefaultFacebookClient(CredentialsAndConstants.ACCESS_TOKEN);
+		this.groupFetcher = new GroupFetcher(facebookClient, CredentialsAndConstants.GROUP_ID);
 	}
 
 	protected void tearDown() throws Exception {
